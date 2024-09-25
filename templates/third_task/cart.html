@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<nav>
+    {% for link in links %}
+    <a href="{% url link.url %}">{{ link.name }}</a> |
+    {% endfor %}
+</nav>
+<p>{{ cart_info }}</p>
+<a href="{% url 'index' %}">
+    <button>На главную</button>
+</a>
+</body>
+</html>
