@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block pagename %}{% endblock %}</title>
+</head>
+<body>
+<nav>
+    {% block menu %}
+    <a href="{% url 'index' %}">К заданиям</a> |
+    <a href="{% url 'shop4' %}">Магазин</a> |
+    <a href="{% url 'cart4' %}">Корзина</a>
+    {% endblock %}
+</nav>
+<div>
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>

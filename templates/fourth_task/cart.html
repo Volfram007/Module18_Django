@@ -1,0 +1,9 @@
+{% extends 'fourth_task/menu.html' %}
+
+{% block pagename %}Корзина{% endblock %}
+
+{% block content %}
+<h1>Корзина</h1>
+<p>Ваша корзина пока пуста. Но это ненадолго! {Тут смайл ёпта}</p>
+<a href="{% url 'index4' %}"><button>Назад</button></a>
+{% endblock %}
